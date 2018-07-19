@@ -1,2 +1,2 @@
 # grafana
-Grafana docker image for SmartHome
+Grafana docker image for smart home project(s).

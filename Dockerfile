@@ -7,8 +7,8 @@ RUN apt-get update && \
     apt-get install -y libfontconfig1 wget && \
     apt-get clean
 
-RUN wget --progress=bar:force https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_5.2.1_armhf.deb && \
-    dpkg -i grafana_5.2.1_armhf.deb && \
+RUN wget --progress=bar:force https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_5.2.2_armhf.deb && \
+    dpkg -i grafana_5.2.2_armhf.deb && \
     grafana-cli plugins install grafana-simple-json-datasource && \
     grafana-cli plugins install grafana-piechart-panel
 
